@@ -62,11 +62,7 @@ for i = numScales:-1:1
     dec_prefix = sprintf('dec%d_', i);
 
    
-    if i == numScales
-        k = down_ch(i);      % bottleneck: 128
-    else
-        k = up_ch(i + 1);    % from previous decoder level: 128
-    end
+    
 
     
     upsample_layer = resize2dLayer('Scale', 2, 'Method', 'nearest', ...
