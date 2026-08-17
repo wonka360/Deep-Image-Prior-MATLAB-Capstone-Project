@@ -38,12 +38,7 @@ for i = numScales:-1:1
     dec_prefix = sprintf('dec%d_', i);
 
     % Channel count at this decoder level
-    if i == numScales
-        k = down_ch(i);       % bottleneck: 128
-    else
-        k = up_ch(i + 1);     % from previous decoder output: 128
-    end
-
+    
     dec_block = [
        
         resize2dLayer('Scale', 2, 'Method', 'nearest', ...
