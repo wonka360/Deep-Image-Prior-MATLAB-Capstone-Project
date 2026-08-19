@@ -12,6 +12,6 @@ Where $x$ is a clean image that was passed through the degradation function $A()
 
 This can be done by formulating an objective optimization function which consists of a data fidelity term and a Regularization term
 
-                    $$\hat{x} = \arg\min_x \Vert{}A(x) - y\Vert{}_2^2 + \lambda R(x)$$
+                    $\hat{x} = \arg\min_x \underbrace{\Vert{}A(x) - y\Vert{}_2^2}_{\text{Data Fidelity}} + \lambda \underbrace{R(x)}_{\text{Regularization Term}}$
 
 
