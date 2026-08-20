@@ -38,6 +38,14 @@ where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a rando
 \theta^* = \arg\min\limits_\theta \|A(f_\theta(z)) - x_o\|^2
 ```
 We insert the random noise tensor $z$ into the CNN and search for a solution in the space spanned by the neural network architecture by minimizing $\theta$
+
+**Denoising**
+For Denoising no spatial degradation occurs so $A$ = $I$ where $I$ is the identity operator. So $x_o$ = $x$ + $n$
+The problem is formulated as:
+
+```math
+\theta^* = \arg\min\limits_\theta \|f_\theta(z) - x_o\|^2
+```
                                             
 
 
