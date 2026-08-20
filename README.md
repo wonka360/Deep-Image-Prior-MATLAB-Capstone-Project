@@ -12,9 +12,8 @@ Where $x$ is a clean image that was passed through the degradation function $A()
 
 This can be done by formulating an objective optimization function which consists of a data fidelity term and a Regularization term
 
-<p align="center">
-  <img width="490" height="104" alt="DeepImage Prior" src="https://github.com/user-attachments/assets/adfbb1ec-a1d7-45b8-8f6a-239c1e152834" />
-</p>
+```math
+\hat{x} = \operatorname*{argmin}_x \underbrace{\|A(x) - y\|_2^2}_{\text{Data Fidelity}} + \lambda \underbrace{R(x)}_{\text{Regularization Term}}
 
 The data fidelity term measures how closely the estimated image $x$ is to the degraded image $y$. This term is to be minimized.
 
