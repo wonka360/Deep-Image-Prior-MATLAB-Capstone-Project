@@ -65,6 +65,9 @@ The problem is formulated as
 ```math
 \theta^* = \arg\min\limits_\theta \|M \odot f_\theta(z) - x_o\|^2
 ```
+In painted Image
+
+<img width="256" height="256" alt="inpainted_image" src="https://github.com/user-attachments/assets/785a9812-e944-477a-b3f1-bdb84425f58b" />
 
                                             
 
