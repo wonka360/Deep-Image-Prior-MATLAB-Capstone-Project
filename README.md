@@ -40,6 +40,7 @@ where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a rando
 We insert the random noise tensor $z$ into the CNN and search for a solution in the space spanned by the neural network architecture by minimizing $\theta$
 
 **Denoising**
+
 For Denoising no spatial degradation occurs so $A$ = $I$ where $I$ is the identity operator. So $x_o$ = $x$ + $n$ where $n$ is any random noise.
 
 The problem is formulated as:
@@ -47,6 +48,15 @@ The problem is formulated as:
 ```math
 \theta^* = \arg\min\limits_\theta \|f_\theta(z) - x_o\|^2
 ```
+Noisy Image
+
+<img width="256" height="256" alt="fruitsNoisy" src="https://github.com/user-attachments/assets/d9050f40-a119-445f-b124-68f71686b12b" />
+
+Denoised Image through DIP
+
+<img width="256" height="256" alt="output_image_denoised (1)" src="https://github.com/user-attachments/assets/04060dc5-427b-42de-9403-37092319e138" />
+
+
                                             
 
 
