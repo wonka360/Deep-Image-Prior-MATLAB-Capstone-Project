@@ -81,13 +81,7 @@ For super resolution $A$ = $d$ a down sampling operator where $d: \mathbb{R}^{rH
 \theta^* = \arg\min\limits_\theta \|d(f_\theta(z)) - x_o\|^2
 ```
 
-Low Resolution Image
 
-<img width="512" height="512" alt="child" src="https://github.com/user-attachments/assets/91689249-2d0e-4845-aefc-f0e1d4c2b775" />
-
-High Resolution
-
-<img width="512" height="512" alt="output_image_superres" src="https://github.com/user-attachments/assets/814d1937-fe62-4485-85ae-ee2b63246382" />
 
 
 
