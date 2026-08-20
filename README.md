@@ -33,6 +33,11 @@ R(x) =
 ```
 
 where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a random noise tensor given as input to the network.
+
+```math
+\theta^* = \arg\min\limits_\theta \|A(f_\theta(z)) - y\|_2^2
+```
+
                                             
 
 
