@@ -12,7 +12,9 @@ Where $x$ is a clean image that was passed through the degradation function $A()
 
 This can be done by formulating an objective optimization function which consists of a data fidelity term and a Regularization term
 
-<img width="245" height="52" alt="DeepImage Prior" src="https://github.com/user-attachments/assets/adfbb1ec-a1d7-45b8-8f6a-239c1e152834" />
+<p align="center">
+  <img width="490" height="104" alt="DeepImage Prior" src="https://github.com/user-attachments/assets/adfbb1ec-a1d7-45b8-8f6a-239c1e152834" />
+</p>
 
 
            
