@@ -56,6 +56,15 @@ Denoised Image through DIP
 
 <img width="256" height="256" alt="output_image_denoised (1)" src="https://github.com/user-attachments/assets/04060dc5-427b-42de-9403-37092319e138" />
 
+**Inpainting**
+
+For inpainting $A$ = $M$ (a binary mask operator). $A$ zeros out corrupted pixel locations
+
+The problem is formulated as
+
+```math
+\theta^* = \arg\min\limits_\theta \|M \odot f_\theta(z) - x_o\|^2
+```
 
                                             
 
