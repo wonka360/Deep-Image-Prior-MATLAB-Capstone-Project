@@ -11,8 +11,11 @@ Suppose we have the image degradation model: $y = A(x) + n$ where $y$ is the deg
 Where $x$ is a clean image that was passed through the degradation function $A()$. There are infinitely many clean images that can take on the value of x to produce y. The objective is to recover the clean image $x$ given the degraded image $y$
 
 This can be done by formulating an objective optimization function which consists of a data fidelity term and a Regularization term
-                                  
-                                            <img width="245" height="52" alt="DeepImage Prior" src="https://github.com/user-attachments/assets/dc69673f-7da7-4aea-824c-8a6b1b1e85ed" />
+
+<img width="245" height="52" alt="DeepImage Prior" src="https://github.com/user-attachments/assets/adfbb1ec-a1d7-45b8-8f6a-239c1e152834" />
+
+           
+                                            
 
 
                    
