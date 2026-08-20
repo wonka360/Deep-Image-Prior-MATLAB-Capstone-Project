@@ -77,6 +77,10 @@ Results after passing through DIP
 
 For super resolution $A$ = $d$ a down sampling operator where $d: \mathbb{R}^{rH \times rW \times C} \to \mathbb{R}^{H \times W \times C}$
 
+```math
+\theta^* = \arg\min\limits_\theta \|d(f_\theta(z)) - x_o\|^2
+```
+
                                             
 
 
