@@ -73,6 +73,10 @@ Results after passing through DIP
 
 <img width="256" height="256" alt="output_image_depainted" src="https://github.com/user-attachments/assets/3d2134ba-0db2-4a5b-9dcf-0ebbfb78d28a" />
 
+**Super Resolution**
+
+For super resolution $A$ = $d$ a down sampling operator where $d: \mathbb{R}^{rH \times rW \times C} \to \mathbb{R}^{H \times W \times C}$
+
                                             
 
 
