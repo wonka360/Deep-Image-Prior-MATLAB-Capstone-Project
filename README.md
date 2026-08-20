@@ -81,7 +81,13 @@ For super resolution $A$ = $d$ a down sampling operator where $d: \mathbb{R}^{rH
 \theta^* = \arg\min\limits_\theta \|d(f_\theta(z)) - x_o\|^2
 ```
 # How to use this program
+Download the folder 'Deep Image Prior Project', open the folder either in MATLAB online or MATLAB Desktop
 
+For Denoising, open the .mlx file 'Denoising_Workflow1.mlx' and run the entire program. If you are interested just in the results run the first 2 sections of code using the 'Run Section' button. Scroll down to line 230 and run the last 2 sections of code.
+
+For Inpainting, open the .mlx file 'Inpainting_Workflow.mlx' and run the entire program. If you are interested just in the results run the first 2 sections of code using the 'Run Section' button. Scroll down to line 196 and run the last 2 sections of code.
+
+For Super Resolution, open the .mlx file 'SuperResolution_Workflow.mlx' and run the entire program. If you are interested just in the results run the first 2 sections of code using the 'Run Section' button. Scroll down to line 176 and run the last 2 sections of code
 
 
 
