@@ -40,7 +40,8 @@ where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a rando
 We insert the random noise tensor $z$ into the CNN and search for a solution in the space spanned by the neural network architecture by minimizing $\theta$
 
 **Denoising**
-For Denoising no spatial degradation occurs so $A$ = $I$ where $I$ is the identity operator. So $x_o$ = $x$ + $n$
+For Denoising no spatial degradation occurs so $A$ = $I$ where $I$ is the identity operator. So $x_o$ = $x$ + $n$ where $n$ is any random noise.
+
 The problem is formulated as:
 
 ```math
