@@ -37,7 +37,7 @@ where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a rando
 ```math
 \theta^* = \arg\min\limits_\theta \|A(f_\theta(z)) - x_o\|^2
 ```
-We insert the random noise tensor $z$ into the CNN and search for a solution in the space spanned by the neural network architecture by minimizing $theta$
+We insert the random noise tensor $z$ into the CNN and search for a solution in the space spanned by the neural network architecture by minimizing $\theta$
                                             
 
 
