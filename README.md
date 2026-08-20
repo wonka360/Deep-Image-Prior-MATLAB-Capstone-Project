@@ -32,7 +32,7 @@ R(x) =
 \end{cases}
 ```
 
-where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a random noise tensor given as input to the network.
+where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a random noise tensor given as input to the network. $x_o$ is the degraded image
 
 ```math
 \theta^* = \arg\min\limits_\theta \|A(f_\theta(z)) - x_o\|^2
