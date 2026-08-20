@@ -30,6 +30,7 @@ R(x) =
 0, & \text{if } x = f_\theta(z) \\ 
 \infty, & \text{otherwise} 
 \end{cases}
+```
 
 where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a random noise tensor given as input to the network.
                                             
