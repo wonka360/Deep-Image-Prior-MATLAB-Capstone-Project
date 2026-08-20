@@ -13,7 +13,7 @@ Where $x$ is a clean image that was passed through the degradation function $A()
 This can be done by formulating an objective optimization function which consists of a data fidelity term and a Regularization term
 
 ```math
-\hat{x} = \displaystyle\arg\min_x \underbrace{\|A(x) - y\|_2^2}_{\text{Data Fidelity}} + \lambda \underbrace{R(x)}_{\text{Regularization Term}}
+\hat{x} = \displaystyle\arg\min_x \underbrace{\|A(x) - y\|^2}_{\text{Data Fidelity}} + \lambda \underbrace{R(x)}_{\text{Regularization Term}}
 ```
 
 The data fidelity term measures how closely the estimated image $x$ is to the degraded image $y$. This term is to be minimized.
@@ -35,9 +35,9 @@ R(x) =
 where $f_\theta(\cdot)$ is the CNN parameterized by $\theta$, and $z$ is a random noise tensor given as input to the network.
 
 ```math
-\theta^* = \arg\min\limits_\theta \|A(f_\theta(z)) - y\|_2^2
+\theta^* = \arg\min\limits_\theta \|A(f_\theta(z)) - y\|^2
 ```
-
+We insert the random noise tensor 
                                             
 
 
