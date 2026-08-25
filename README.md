@@ -50,11 +50,11 @@ The problem is formulated as:
 ```
 Noisy Image
 
-<img width="256" height="256" alt="fruitsNoisy" src="https://github.com/user-attachments/assets/d9050f40-a119-445f-b124-68f71686b12b" />
+<img width="256" height="256" alt="childGTnoise" src="https://github.com/user-attachments/assets/9a52d6e0-d12d-4ee2-8826-acaa3896cf7f" />
 
 Denoised Image through DIP
 
-<img width="256" height="256" alt="output_image_denoised (1)" src="https://github.com/user-attachments/assets/04060dc5-427b-42de-9403-37092319e138" />
+<img width="256" height="256" alt="output_image_denoised (3)" src="https://github.com/user-attachments/assets/62f5bfdc-db06-4ad7-89ce-8f68ab73c15c" />
 
 **Inpainting**
 
