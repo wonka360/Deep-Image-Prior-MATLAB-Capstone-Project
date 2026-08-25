@@ -83,7 +83,7 @@ For super resolution $A$ = $d$ a down sampling operator where $d: \mathbb{R}^{rH
 
 Low Resolution Image
 
-<img width="128" height="128" alt="child_LR" src="https://github.com/user-attachments/assets/f72c5c97-7e1f-422f-9df0-7edfbd6baf81" />
+<img width="512" height="512" alt="child_LR" src="https://github.com/user-attachments/assets/f72c5c97-7e1f-422f-9df0-7edfbd6baf81" />
 
 Super Resolution Image
 
