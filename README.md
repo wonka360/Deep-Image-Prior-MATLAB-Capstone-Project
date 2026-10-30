@@ -48,10 +48,6 @@ The problem is formulated as:
 ```math
 \theta^* = \arg\min\limits_\theta \|f_\theta(z) - x_o\|^2
 ```
-Noisy Image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Denoised Image through DIP
-
-
-<img width="256" height="256" alt="childGTnoise" src="https://github.com/user-attachments/assets/9a52d6e0-d12d-4ee2-8826-acaa3896cf7f" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="256" height="256" alt="ChildImgDenoised" src="https://github.com/user-attachments/assets/439f37f9-abc9-4225-93d7-d0d8361f71b9" />
 
 | Noisy Image | Denoised Image through DIP |
 | :---: | :---: |
@@ -66,13 +62,17 @@ The problem is formulated as
 ```math
 \theta^* = \arg\min\limits_\theta \|M \odot f_\theta(z) - x_o\|^2
 ```
-In painted Image
+Inpainted Image
 
 <img width="256" height="256" alt="inpainted_image" src="https://github.com/user-attachments/assets/785a9812-e944-477a-b3f1-bdb84425f58b" />
 
 Results after passing through DIP
 
 <img width="256" height="256" alt="output_image_depainted" src="https://github.com/user-attachments/assets/3d2134ba-0db2-4a5b-9dcf-0ebbfb78d28a" />
+
+| Inpainted Image | DePainted Image through DIP |
+| :---: | :---: |
+| <img width="256" height="256" alt="inpainted_image" src="https://github.com/user-attachments/assets/785a9812-e944-477a-b3f1-bdb84425f58b" /> | <img width="256" height="256" alt="LibraryDepainted" src="https://github.com/user-attachments/assets/cdc7000f-11b0-4015-89e9-2f0d3bb6456f" /> |
 
 **Super Resolution**
 
