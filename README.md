@@ -80,7 +80,7 @@ For super resolution $A$ = $d$ a down sampling operator where $d: \mathbb{R}^{rH
 
 | Low Resolution Image | Increased Resolution through DIP |
 | :---: | :---: |
-| <img width="192" height="128" alt="childLowRes" src="https://github.com/user-attachments/assets/b3a37c7d-4329-4053-8d8b-3bac2e29bbf1" /> | <img width="768" height="512" alt="childSR" src="https://github.com/user-attachments/assets/82f104ec-97e2-4c3e-8c39-c6b5c62e09a2" /> |
+| <img width="384" height="256" alt="childLowRes" src="https://github.com/user-attachments/assets/b3a37c7d-4329-4053-8d8b-3bac2e29bbf1" /> | <img width="384" height="256" alt="childSR" src="https://github.com/user-attachments/assets/82f104ec-97e2-4c3e-8c39-c6b5c62e09a2" /> |
 
 # How to use this program
 Download the folder 'Deep Image Prior Project', open the folder either in MATLAB online or MATLAB Desktop
