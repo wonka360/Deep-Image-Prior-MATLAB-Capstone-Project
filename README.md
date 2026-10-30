@@ -54,7 +54,8 @@ Noisy Image
 
 Denoised Image through DIP
 
-<img width="256" height="256" alt="output_image_denoised (3)" src="https://github.com/user-attachments/assets/62f5bfdc-db06-4ad7-89ce-8f68ab73c15c" />
+<img width="256" height="256" alt="ChildImgDenoised" src="https://github.com/user-attachments/assets/439f37f9-abc9-4225-93d7-d0d8361f71b9" />
+
 
 **Inpainting**
 
