@@ -53,6 +53,10 @@ Noisy Image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Den
 
 <img width="256" height="256" alt="childGTnoise" src="https://github.com/user-attachments/assets/9a52d6e0-d12d-4ee2-8826-acaa3896cf7f" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="256" height="256" alt="ChildImgDenoised" src="https://github.com/user-attachments/assets/439f37f9-abc9-4225-93d7-d0d8361f71b9" />
 
+| Noisy Image | Denoised Image through DIP |
+| :---: | :---: |
+| <img width="256" height="256" alt="childGTnoise" src="https://github.com/user-attachments/assets/9a52d6e0-d12d-4ee2-8826-acaa3896cf7f" /> | <img width="256" height="256" alt="ChildImgDenoised" src="https://github.com/user-attachments/assets/439f37f9-abc9-4225-93d7-d0d8361f71b9" /> |
+
 **Inpainting**
 
 For inpainting $A$ = $M$ (a binary mask operator). $A$ zeros out corrupted pixel locations
