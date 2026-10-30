@@ -4,11 +4,11 @@ down_channels = [8, 16, 32, 64, 128];
 up_channels   = [8, 16, 32, 64, 128];
 numScales     = 5;
 
-lgraph = layerGraph();
+deepNet = dlnetwork;
 
 % --- Input ---
 inputL = imageInputLayer(imageSize, 'Name', 'input', 'Normalization', 'none');
-lgraph = addLayers(lgraph, inputL);
+deepNet = addLayers(deepNet, inputL);
 currentInput = 'input';
 
 % --- Encoder Path ---
@@ -26,8 +26,8 @@ for i = 1:numScales
         maxPooling2dLayer(2, 'Stride', 2, 'Name', [prefix 'pool'])   
     ];
 
-    lgraph = addLayers(lgraph, encoder_block);
-    lgraph = connectLayers(lgraph, currentInput, [prefix 'conv1']);
+    deepNet = addLayers(deepNet, encoder_block);
+    deepNet = connectLayers(deepNet, currentInput, [prefix 'conv1']);
     currentInput = [prefix 'pool'];
 end
 
@@ -61,19 +61,19 @@ for i = 0:numScales-1
             leakyReluLayer(0.2, 'Name', [up_prefix 'lrelu2'])
         ];
 
-        lgraph = addLayers(lgraph, dec_upsample);
-        lgraph = addLayers(lgraph, skip_block);
-        lgraph = addLayers(lgraph, decoder_block);
-        lgraph = addLayers(lgraph, batchNorm);
+        deepNet = addLayers(deepNet, dec_upsample);
+        deepNet = addLayers(deepNet, skip_block);
+        deepNet = addLayers(deepNet, decoder_block);
+        deepNet = addLayers(deepNet, batchNorm);
 
-        lgraph = connectLayers(lgraph, currentInput,          [up_prefix 'upsample']);
-        lgraph = connectLayers(lgraph, [up_prefix 'upsample'],[up_prefix 'bnorm']);
+        deepNet = connectLayers(deepNet, currentInput,          [up_prefix 'upsample']);
+        deepNet = connectLayers(deepNet, [up_prefix 'upsample'],[up_prefix 'bnorm']);
 
         skipSource = sprintf('enc%d_lrelu2', j);
-        lgraph = connectLayers(lgraph, skipSource,               [skip_prefix 'conv1']);
+        deepNet = connectLayers(deepNet, skipSource,               [skip_prefix 'conv1']);
         
-        lgraph = connectLayers(lgraph, [skip_prefix 'lrelu1'],   [up_prefix 'concat/in1']);
-        lgraph = connectLayers(lgraph, [up_prefix 'bnorm'],      [up_prefix 'concat/in2']);
+        deepNet = connectLayers(deepNet, [skip_prefix 'lrelu1'],   [up_prefix 'concat/in1']);
+        deepNet = connectLayers(deepNet, [up_prefix 'bnorm'],      [up_prefix 'concat/in2']);
 
         currentInput = [up_prefix 'lrelu2'];
 
@@ -90,8 +90,8 @@ for i = 0:numScales-1
             leakyReluLayer(0.2, 'Name', [up_prefix 'lrelu2'])       
         ];
 
-        lgraph = addLayers(lgraph, decoder_block);
-        lgraph = connectLayers(lgraph, currentInput, [up_prefix 'upsample']);
+        deepNet = addLayers(deepNet, decoder_block);
+        deepNet = connectLayers(deepNet, currentInput, [up_prefix 'upsample']);
         currentInput = [up_prefix 'lrelu2'];                         
     end
 end
@@ -101,8 +101,9 @@ final_layer = [
     convolution2dLayer(1, numClasses, 'Name', 'final_conv')
     sigmoidLayer('Name', 'final_sigmoid')
 ];
-lgraph = addLayers(lgraph, final_layer);
-lgraph = connectLayers(lgraph, currentInput, 'final_conv');
+deepNet = addLayers(deepNet, final_layer);
+deepNet = connectLayers(deepNet, currentInput, 'final_conv');
 
-net = dlnetwork(lgraph);
+%net = dlnetwork(lgraph);
+net = initialize(deepNet);
 end
