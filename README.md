@@ -85,7 +85,10 @@ For super resolution $A$ = $d$ a down sampling operator where $d: \mathbb{R}^{rH
 | :---: | :---: |
 | <img width="384" height="256" alt="childLowRes" src="https://github.com/user-attachments/assets/b3a37c7d-4329-4053-8d8b-3bac2e29bbf1" /> | <img width="384" height="256" alt="childSR" src="https://github.com/user-attachments/assets/82f104ec-97e2-4c3e-8c39-c6b5c62e09a2" /> |
 
-# How to use this program
+# Comparison of PSNR and SSIM Metrics for Denoising with Standard Denoising Techniques
+| Technique | PSNR | SSIM |
+| :---: | :---: |
+
 Download the folder 'Deep Image Prior Project', open the folder either in MATLAB online or MATLAB Desktop
 
 For Denoising, open the .mlx file 'Denoising_Workflow1.mlx' and run the entire program. If you are interested just in the results run the first 2 sections of code using the 'Run Section' button. Scroll down to line 230 and run the last 2 sections of code.
