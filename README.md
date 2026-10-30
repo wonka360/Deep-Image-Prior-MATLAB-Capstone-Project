@@ -48,13 +48,12 @@ The problem is formulated as:
 ```math
 \theta^* = \arg\min\limits_\theta \|f_\theta(z) - x_o\|^2
 ```
-Noisy Image
+Noisy Image                  Denoised Image through DIP
 
-<img width="256" height="256" alt="childGTnoise" src="https://github.com/user-attachments/assets/9a52d6e0-d12d-4ee2-8826-acaa3896cf7f" />  <img width="256" height="256" alt="ChildImgDenoised" src="https://github.com/user-attachments/assets/439f37f9-abc9-4225-93d7-d0d8361f71b9" />
+<img width="256" height="256" alt="childGTnoise" src="https://github.com/user-attachments/assets/9a52d6e0-d12d-4ee2-8826-acaa3896cf7f" />                <img width="256" height="256" alt="ChildImgDenoised" src="https://github.com/user-attachments/assets/439f37f9-abc9-4225-93d7-d0d8361f71b9" />
 
-Denoised Image through DIP
 
-<img width="256" height="256" alt="ChildImgDenoised" src="https://github.com/user-attachments/assets/439f37f9-abc9-4225-93d7-d0d8361f71b9" />
+
 
 
 **Inpainting**
