@@ -86,8 +86,12 @@ For super resolution $A$ = $d$ a down sampling operator where $d: \mathbb{R}^{rH
 | <img width="384" height="256" alt="childLowRes" src="https://github.com/user-attachments/assets/b3a37c7d-4329-4053-8d8b-3bac2e29bbf1" /> | <img width="384" height="256" alt="childSR" src="https://github.com/user-attachments/assets/82f104ec-97e2-4c3e-8c39-c6b5c62e09a2" /> |
 
 # Comparison of PSNR and SSIM Metrics for Denoising with Standard Denoising Techniques
-| Technique | PSNR | SSIM |
-| :---: | :---: |
+The following results were computed by comparing the ground truth image (childGT.jpeg in this case) with the output of the respective technique.
+| Technique | PSNR (dB) | SSIM |
+| :---: | :---: | :---: |
+| DIP |30.18 | 0.95 |
+| imgaussfilt, sigma = 2 | 26.10 | 0.91 |
+| imbilatfilt, sigma = 2 | 20.55 | 0.57 |
 
 Download the folder 'Deep Image Prior Project', open the folder either in MATLAB online or MATLAB Desktop
 
