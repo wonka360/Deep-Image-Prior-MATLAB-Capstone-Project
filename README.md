@@ -94,14 +94,17 @@ The following results were computed by comparing the ground truth image (childGT
 | imgaussfilt, sigma = 2 | 26.10 | 0.91 |
 | imbilatfilt, sigma = 2 | 20.55 | 0.57 |
 
-
+# How To Use This Program
 Download the folder 'Deep Image Prior Project', open the folder either in MATLAB online or MATLAB Desktop
 
-For Denoising, open the .mlx file 'Denoising_Workflow1.mlx' and run the entire program. If you are interested just in the results run the first 2 sections of code using the 'Run Section' button. Scroll down to line 230 and run the last 2 sections of code.
+If you are interested just in the results, open LoadPretrainedWeights.m and run the file end to end. The user will be prompted for input in the command terminal, so check the command terminal while running the file because the prompt isn't very conspicous.
 
-For Inpainting, open the .mlx file 'Inpainting_Workflow.mlx' and run the entire program. If you are interested just in the results run the first 2 sections of code using the 'Run Section' button. Scroll down to line 196 and run the last 2 sections of code.
+To dive into the entire pipeline from start to finish for Denoising, Inpainting and Super Resolution,
 
-For Super Resolution, open the .mlx file 'SuperResolution_Workflow.mlx' and run the entire program. If you are interested just in the results run the first 2 sections of code using the 'Run Section' button. Scroll down to line 176 and run the last 2 sections of code
+Open DenoisingWorkflow.m for image denoising.
+Open InpaintingWorkflowPt1.m for image inpainting removal (Severe spatial degradation).
+Open InpaintingWorkflowPt2.m for image inpainting removal (Not so severe spatial degradation, unwanted text on an image).
+Open SuperResolutionWorkflow.m for creating a High Resolution image from a low resolution image.
 
 
 
