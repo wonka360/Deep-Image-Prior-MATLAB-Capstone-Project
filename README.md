@@ -101,10 +101,10 @@ If you are interested just in the results, open LoadPretrainedWeights.m and run 
 
 To dive into the entire pipeline from start to finish for Denoising, Inpainting and Super Resolution,
 
-Open DenoisingWorkflow.m for image denoising.
-Open InpaintingWorkflowPt1.m for image inpainting removal (Severe spatial degradation).
-Open InpaintingWorkflowPt2.m for image inpainting removal (Not so severe spatial degradation, unwanted text on an image).
-Open SuperResolutionWorkflow.m for creating a High Resolution image from a low resolution image.
+- Open DenoisingWorkflow.m for image denoising.
+- Open InpaintingWorkflowPt1.m for image inpainting removal (Severe spatial degradation).
+- Open InpaintingWorkflowPt2.m for image inpainting removal (Not so severe spatial degradation, unwanted text on an image).
+- Open SuperResolutionWorkflow.m for creating a High Resolution image from a low resolution image.
 
 
 
